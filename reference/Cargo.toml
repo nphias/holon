@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "dna/zomes/holon",
+    "dna/zomes/holon/integrity"
+]
+resolver = "2"
+
+[profile.dev]
+opt-level = "z"
+
+[profile.release]
+opt-level = "z"

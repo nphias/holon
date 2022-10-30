@@ -1,0 +1,19 @@
+---
+manifest_version: "1"
+name: holon
+integrity:
+  network_seed: ~
+  properties: ~
+  origin_time: 1667042009524230
+  zomes:
+    - name: holon_integrity
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/holon_integrity.wasm"
+      dependencies: ~
+coordinator:
+  zomes:
+    - name: holon
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/holon.wasm"
+      dependencies:
+        - name: holon_integrity

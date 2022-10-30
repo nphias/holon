@@ -1,0 +1,23 @@
+[package]
+authors = ["nphias@gmail.com"]
+description = "Holon zome for any Holochain app"
+documentation = ""
+edition = "2021"
+homepage = "https://docs.rs/hc_zome_profiles"
+license = "CAL"
+name = "hc_zome_holon_coordinator"
+repository = "https://github.com/nphias/holon"
+version = "0.0.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "hc_zome_holon_coordinator"
+
+[dependencies]
+derive_more = "0"
+serde = "1"
+chrono = { version = "=0.4.22", default-features = false, features = ["clock", "std", "oldtime", "serde"], optional = true }
+hc_zome_holon_integrity = {path = "../integrity"}
+hdk = "0.0.156"
+
+
