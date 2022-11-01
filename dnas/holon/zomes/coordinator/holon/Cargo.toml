@@ -1,4 +1,5 @@
 [package]
+authors = ["nphias@gmail.com"]
 name = "holon"
 version = "0.0.1"
 edition = "2021"

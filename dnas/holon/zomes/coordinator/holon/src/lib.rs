@@ -1,4 +1,4 @@
-pub mod all_holons;
+//pub mod all_holons;
 pub mod typedescriptor;
 pub mod holon;
 pub mod holon_dto;
